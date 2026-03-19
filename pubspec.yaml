@@ -1,0 +1,27 @@
+name: music_player_wrapper
+description: Wrapper Web Player Apple Music Clone
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Untuk WebView yang lebih powerful dan mendukung background playback
+  flutter_inappwebview: ^6.0.0
+  # WebView standar (opsional, tapi ditambahkan sesuai request)
+  webview_flutter: ^4.4.2
+  # Untuk menjalankan foreground service agar app tidak di-kill OS
+  audio_service: ^0.18.12
+  # Audio player native (ditambahkan sesuai request)
+  just_audio: ^0.9.36
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
